@@ -8,10 +8,33 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('vietnamese_administrative_units_table', function (Blueprint $table) {
+        Schema::create(config('vietnamese-administrative-units.province.table', 'provinces'), function (Blueprint $table) {
             $table->id();
 
-            // add fields
+            $table->string('code', 2)->unique();
+            $table->string('name', 50)->index();
+
+            $table->timestamps();
+        });
+
+        Schema::create(config('vietnamese-administrative-units.district.table', 'districts'), function (Blueprint $table) {
+            $table->id();
+
+            $table->foreignId('province_id')->constrained(config('vietnamese-administrative-units.province.table', 'provinces'));
+
+            $table->string('code', 3)->unique();
+            $table->string('name', 50)->index();
+
+            $table->timestamps();
+        });
+
+        Schema::create(config('vietnamese-administrative-units.ward.table', 'wards'), function (Blueprint $table) {
+            $table->id();
+
+            $table->foreignId('district_id')->constrained(config('vietnamese-administrative-units.district.table', 'districts'));
+
+            $table->string('code', 5)->unique();
+            $table->string('name', 50)->index();
 
             $table->timestamps();
         });

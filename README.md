@@ -6,6 +6,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/dilee/laravel-vietnamese-administrative-units.svg?style=flat-square)](https://packagist.org/packages/dilee/laravel-vietnamese-administrative-units)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+
 ## Installation
 
 You can install the package via composer:
@@ -31,6 +32,20 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'province' => [
+        'model' => \Dilee\VietnameseAdministrativeUnits\Models\Province::class,
+        'table' => 'provinces',
+    ],
+
+    'district' => [
+        'model' => \Dilee\VietnameseAdministrativeUnits\Models\District::class,
+        'table' => 'districts',
+    ],
+
+    'ward' => [
+        'model' => \Dilee\VietnameseAdministrativeUnits\Models\Ward::class,
+        'table' => 'wards',
+    ],
 ];
 ```
 
@@ -67,8 +82,8 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Dilee](https://github.com/dilee)
-- [All Contributors](../../contributors)
+-   [Dilee](https://github.com/dilee)
+-   [All Contributors](../../contributors)
 
 ## License
 
