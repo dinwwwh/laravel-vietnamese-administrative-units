@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Dilee\VietnameseAdministrativeUnits\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class VietnameseAdministrativeUnitsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'vietnamese-administrative-units';
 
     public $description = 'My command';
 
