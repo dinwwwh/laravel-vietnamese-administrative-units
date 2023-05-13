@@ -2,9 +2,9 @@
 
 namespace Dilee\VietnameseAdministrativeUnits\Tests;
 
+use Dilee\VietnameseAdministrativeUnits\VietnameseAdministrativeUnitsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Dilee\VietnameseAdministrativeUnits\VietnameseAdministrativeUnitsServiceProvider;
 
 class TestCase extends Orchestra
 {

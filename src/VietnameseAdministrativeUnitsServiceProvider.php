@@ -2,9 +2,9 @@
 
 namespace Dilee\VietnameseAdministrativeUnits;
 
+use Dilee\VietnameseAdministrativeUnits\Commands\VietnameseAdministrativeUnitsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Dilee\VietnameseAdministrativeUnits\Commands\VietnameseAdministrativeUnitsCommand;
 
 class VietnameseAdministrativeUnitsServiceProvider extends PackageServiceProvider
 {
