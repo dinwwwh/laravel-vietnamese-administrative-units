@@ -4,6 +4,7 @@ namespace Dilee\VietnameseAdministrativeUnits\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * @property int $id
@@ -15,10 +16,12 @@ use Illuminate\Database\Eloquent\Model;
 class District extends Model
 {
     use HasFactory;
+    use SoftDeletes;
 
     protected $fillable = [
         'code',
         'name',
+        'province_id',
     ];
 
     public function getTable()
@@ -28,7 +31,7 @@ class District extends Model
 
     public function province()
     {
-        return $this->belongsTo(config('vietnamese-administrative-units.province.model', Province::class));
+        return $this->belongsTo(config('vietnamese-administrative-units.province.model', Province::class))->withTrashed();
     }
 
     public function wards()
