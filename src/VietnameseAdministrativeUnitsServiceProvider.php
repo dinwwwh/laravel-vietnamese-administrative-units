@@ -2,7 +2,7 @@
 
 namespace Dilee\VietnameseAdministrativeUnits;
 
-use Dilee\VietnameseAdministrativeUnits\Commands\VietnameseAdministrativeUnitsCommand;
+use Dilee\VietnameseAdministrativeUnits\Commands\ImportationCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -19,6 +19,6 @@ class VietnameseAdministrativeUnitsServiceProvider extends PackageServiceProvide
             ->name('vietnamese-administrative-units')
             ->hasConfigFile()
             ->hasMigration('create_vietnamese_administrative_units_table')
-            ->hasCommand(VietnameseAdministrativeUnitsCommand::class);
+            ->hasCommand(ImportationCommand::class);
     }
 }
