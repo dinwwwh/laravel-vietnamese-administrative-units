@@ -13,7 +13,7 @@ class DistrictFactory extends Factory
         return [
             'code' => $this->faker->unique()->randomNumber(2),
             'name' => $this->faker->unique()->words(asText: true),
-            'province_id' => \VietnameseAdministrativeUnits\Models\Province::factory(),
+            'province_id' => ProvinceFactory::new(),
         ];
     }
 }

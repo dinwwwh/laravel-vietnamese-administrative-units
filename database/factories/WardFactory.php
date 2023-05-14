@@ -13,7 +13,7 @@ class WardFactory extends Factory
         return [
             'code' => $this->faker->unique()->randomNumber(2),
             'name' => $this->faker->unique()->words(asText: true),
-            'district_id' => \VietnameseAdministrativeUnits\Models\District::factory(),
+            'district_id' => DistrictFactory::new(),
         ];
     }
 }
