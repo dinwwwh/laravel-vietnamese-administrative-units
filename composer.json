@@ -1,13 +1,15 @@
 {
-    "name": "dilee/laravel-vietnamese-administrative-units",
+    "name": "dileedotdev/laravel-vietnamese-administrative-units",
     "description": "A Laravel package for interacting with Vietnamese administrative units",
     "keywords": [
         "dilee",
         "laravel",
+        "dilee.dev",
+        "dileedotdev",
         "laravel-vietnamese-administrative-units",
         "administrative-units"
     ],
-    "homepage": "https://github.com/dilee/laravel-vietnamese-administrative-units",
+    "homepage": "https://github.com/dileedotdev/laravel-vietnamese-administrative-units",
     "license": "MIT",
     "authors": [
         {
@@ -37,13 +39,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Dilee\\VietnameseAdministrativeUnits\\": "src/",
-            "Dilee\\VietnameseAdministrativeUnits\\Database\\Factories\\": "database/factories/"
+            "VietnameseAdministrativeUnits\\": "src/",
+            "VietnameseAdministrativeUnits\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dilee\\VietnameseAdministrativeUnits\\Tests\\": "tests/"
+            "VietnameseAdministrativeUnits\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -63,11 +65,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dilee\\VietnameseAdministrativeUnits\\VietnameseAdministrativeUnitsServiceProvider"
-            ],
-            "aliases": {
-                "VietnameseAdministrativeUnits": "Dilee\\VietnameseAdministrativeUnits\\Facades\\VietnameseAdministrativeUnits"
-            }
+                "VietnameseAdministrativeUnits\\VietnameseAdministrativeUnitsServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",

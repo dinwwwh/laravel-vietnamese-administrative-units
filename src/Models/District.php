@@ -1,6 +1,6 @@
 <?php
 
-namespace Dilee\VietnameseAdministrativeUnits\Models;
+namespace VietnameseAdministrativeUnits\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

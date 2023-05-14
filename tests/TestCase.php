@@ -1,10 +1,10 @@
 <?php
 
-namespace Dilee\VietnameseAdministrativeUnits\Tests;
+namespace VietnameseAdministrativeUnits\Tests;
 
-use Dilee\VietnameseAdministrativeUnits\VietnameseAdministrativeUnitsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
+use VietnameseAdministrativeUnits\VietnameseAdministrativeUnitsServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Dilee\\VietnameseAdministrativeUnits\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'VietnameseAdministrativeUnits\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

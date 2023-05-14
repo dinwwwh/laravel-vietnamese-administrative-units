@@ -1,6 +1,6 @@
 <?php
 
-namespace Dilee\VietnameseAdministrativeUnits;
+namespace VietnameseAdministrativeUnits;
 
 class VietnameseAdministrativeUnits
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Dilee\VietnameseAdministrativeUnits\Database\Factories;
+namespace VietnameseAdministrativeUnits\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ProvinceFactory extends Factory
 {
-    protected $model = \Dilee\VietnameseAdministrativeUnits\Models\Province::class;
+    protected $model = \VietnameseAdministrativeUnits\Models\Province::class;
 
     public function definition()
     {

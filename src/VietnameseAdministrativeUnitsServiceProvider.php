@@ -1,10 +1,10 @@
 <?php
 
-namespace Dilee\VietnameseAdministrativeUnits;
+namespace VietnameseAdministrativeUnits;
 
-use Dilee\VietnameseAdministrativeUnits\Commands\ImportationCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use VietnameseAdministrativeUnits\Commands\ImportationCommand;
 
 class VietnameseAdministrativeUnitsServiceProvider extends PackageServiceProvider
 {

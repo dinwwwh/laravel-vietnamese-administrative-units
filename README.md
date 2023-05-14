@@ -1,9 +1,9 @@
 # A Laravel package for interacting with Vietnamese administrative units
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/dilee/laravel-vietnamese-administrative-units.svg?style=flat-square)](https://packagist.org/packages/dilee/laravel-vietnamese-administrative-units)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/dilee/laravel-vietnamese-administrative-units/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/dilee/laravel-vietnamese-administrative-units/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/dilee/laravel-vietnamese-administrative-units/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/dilee/laravel-vietnamese-administrative-units/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/dilee/laravel-vietnamese-administrative-units.svg?style=flat-square)](https://packagist.org/packages/dilee/laravel-vietnamese-administrative-units)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/dileedotdev/laravel-vietnamese-administrative-units.svg?style=flat-square)](https://packagist.org/packages/dileedotdev/laravel-vietnamese-administrative-units)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/dileedotdev/laravel-vietnamese-administrative-units/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/dileedotdev/laravel-vietnamese-administrative-units/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/dileedotdev/laravel-vietnamese-administrative-units/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/dileedotdev/laravel-vietnamese-administrative-units/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/dileedotdev/laravel-vietnamese-administrative-units.svg?style=flat-square)](https://packagist.org/packages/dileedotdev/laravel-vietnamese-administrative-units)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
@@ -12,7 +12,7 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 You can install the package via composer:
 
 ```bash
-composer require dilee/laravel-vietnamese-administrative-units
+composer require dileedotdev/laravel-vietnamese-administrative-units
 ```
 
 You should publish and run the migrations with:
@@ -33,17 +33,17 @@ This is the contents of the published config file:
 ```php
 return [
     'province' => [
-        'model' => \Dilee\VietnameseAdministrativeUnits\Models\Province::class,
+        'model' => \VietnameseAdministrativeUnits\Models\Province::class,
         'table' => 'provinces',
     ],
 
     'district' => [
-        'model' => \Dilee\VietnameseAdministrativeUnits\Models\District::class,
+        'model' => \VietnameseAdministrativeUnits\Models\District::class,
         'table' => 'districts',
     ],
 
     'ward' => [
-        'model' => \Dilee\VietnameseAdministrativeUnits\Models\Ward::class,
+        'model' => \VietnameseAdministrativeUnits\Models\Ward::class,
         'table' => 'wards',
     ],
 ];
@@ -76,7 +76,7 @@ If you wonder where the CSV file comes from, you can find it [here](https://www.
 You can use the models as usual:
 
 ```php
-use Dilee\VietnameseAdministrativeUnits\Models\Ward;
+use VietnameseAdministrativeUnits\Models\Ward;
 
 class YourModel {
     public function ward()
@@ -107,9 +107,9 @@ return new class extends Migration
 Below is some useful code:
 
 ```php
-use Dilee\VietnameseAdministrativeUnits\Models\Province;
-use Dilee\VietnameseAdministrativeUnits\Models\District;
-use Dilee\VietnameseAdministrativeUnits\Models\Ward;
+use VietnameseAdministrativeUnits\Models\Province;
+use VietnameseAdministrativeUnits\Models\District;
+use VietnameseAdministrativeUnits\Models\Ward;
 
 // Get all provinces
 Province::all();
@@ -155,7 +155,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
--   [Dilee](https://github.com/dileedotdev)
+-   [Dileedotdev](https://github.com/dileedotdev)
 -   [All Contributors](../../contributors)
 
 ## License

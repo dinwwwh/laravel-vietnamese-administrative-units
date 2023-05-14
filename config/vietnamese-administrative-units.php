@@ -1,19 +1,19 @@
 <?php
 
-// config for Dilee/VietnameseAdministrativeUnits
+// config for dileedotdev/laravel-vietnamese-administrative-units package
 return [
     'province' => [
-        'model' => \Dilee\VietnameseAdministrativeUnits\Models\Province::class,
+        'model' => \VietnameseAdministrativeUnits\Models\Province::class,
         'table' => 'provinces',
     ],
 
     'district' => [
-        'model' => \Dilee\VietnameseAdministrativeUnits\Models\District::class,
+        'model' => \VietnameseAdministrativeUnits\Models\District::class,
         'table' => 'districts',
     ],
 
     'ward' => [
-        'model' => \Dilee\VietnameseAdministrativeUnits\Models\Ward::class,
+        'model' => \VietnameseAdministrativeUnits\Models\Ward::class,
         'table' => 'wards',
     ],
 ];

@@ -1,11 +1,11 @@
 <?php
 
-use Dilee\VietnameseAdministrativeUnits\Models\District;
-use Dilee\VietnameseAdministrativeUnits\Models\Province;
-use Dilee\VietnameseAdministrativeUnits\Models\Ward;
 use function Pest\Laravel\assertDatabaseCount;
 use Spatie\SimpleExcel\SimpleExcelReader;
 use Spatie\TestTime\TestTime;
+use VietnameseAdministrativeUnits\Models\District;
+use VietnameseAdministrativeUnits\Models\Province;
+use VietnameseAdministrativeUnits\Models\Ward;
 
 it('includes enough provinces, districts and wards', function () {
     $filePath = __DIR__.'/../assets/vietnamese-administrative-units.csv';

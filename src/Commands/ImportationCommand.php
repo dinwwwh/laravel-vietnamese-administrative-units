@@ -1,12 +1,12 @@
 <?php
 
-namespace Dilee\VietnameseAdministrativeUnits\Commands;
+namespace VietnameseAdministrativeUnits\Commands;
 
-use Dilee\VietnameseAdministrativeUnits\Models\District;
-use Dilee\VietnameseAdministrativeUnits\Models\Province;
-use Dilee\VietnameseAdministrativeUnits\Models\Ward;
 use Illuminate\Console\Command;
 use Spatie\SimpleExcel\SimpleExcelReader;
+use VietnameseAdministrativeUnits\Models\District;
+use VietnameseAdministrativeUnits\Models\Province;
+use VietnameseAdministrativeUnits\Models\Ward;
 
 class ImportationCommand extends Command
 {

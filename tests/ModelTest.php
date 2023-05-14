@@ -1,9 +1,9 @@
 <?php
 
-use Dilee\VietnameseAdministrativeUnits\Models\District;
-use Dilee\VietnameseAdministrativeUnits\Models\Province;
-use Dilee\VietnameseAdministrativeUnits\Models\Ward;
 use function Pest\Laravel\assertDatabaseCount;
+use VietnameseAdministrativeUnits\Models\District;
+use VietnameseAdministrativeUnits\Models\Province;
+use VietnameseAdministrativeUnits\Models\Ward;
 
 it('relationships are working', function () {
     Ward::factory()->count(10)->create();
