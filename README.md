@@ -18,7 +18,7 @@ composer require dileedotdev/laravel-vietnamese-administrative-units
 You should publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-vietnamese-administrative-units-migrations"
+php artisan vendor:publish --tag="vietnamese-administrative-units-migrations"
 php artisan migrate
 ```
 
