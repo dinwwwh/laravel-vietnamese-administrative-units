@@ -10,8 +10,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property int $id
  * @property string $code
  * @property string $name
+ * @property int $province_id
  * @property Province $province
  * @property Ward[]|\Illuminate\Database\Eloquent\Collection $wards
+ * @property \Illuminate\Support\Carbon $updated_at
+ * @property \Illuminate\Support\Carbon $created_at
  */
 class District extends Model
 {
@@ -31,6 +34,7 @@ class District extends Model
 
     public function province()
     {
+        // @phpstan-ignore-next-line
         return $this->belongsTo(config('vietnamese-administrative-units.province.model', Province::class))->withTrashed();
     }
 

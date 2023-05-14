@@ -10,7 +10,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property int $id
  * @property string $code
  * @property string $name
+ * @property int $district_id
  * @property District $district
+ * @property \Illuminate\Support\Carbon $updated_at
+ * @property \Illuminate\Support\Carbon $created_at
  */
 class Ward extends Model
 {
@@ -30,6 +33,7 @@ class Ward extends Model
 
     public function district()
     {
+        // @phpstan-ignore-next-line
         return $this->belongsTo(config('vietnamese-administrative-units.district.model', District::class))->withTrashed();
     }
 }
